@@ -214,8 +214,11 @@ have_func("ldap_search_ext_s")
 have_func("ldap_unbind_ext_s")
 have_func("ldap_sasl_interactive_bind_s")
 
+have_header("sasl/sasl.h")
+
 $defs << "-DRUBY_VERSION_CODE=#{RUBY_VERSION.gsub(/\D/, '')}"
 
+create_header()
 create_makefile("ldap")
 
 

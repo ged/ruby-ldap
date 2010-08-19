@@ -15,7 +15,7 @@
 extern VALUE rb_ldap_conn_initialize (int argc, VALUE argv[], VALUE self);
 extern VALUE rb_ldap_conn_rebind (VALUE self);
 
-#if defined(HAVE_LDAP_SASL_BIND_S)
+#if defined(HAVE_LDAP_SASL_BIND_S) && defined(HAVE_SASL_SASL_H)
 #include <sasl/sasl.h>
 VALUE
 rb_ldap_indifferent_hash_aref(VALUE hash, const char *key)

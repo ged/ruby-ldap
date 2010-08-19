@@ -6,6 +6,8 @@
 #ifndef RB_LDAP_H
 #define RB_LDAP_H 1
 
+#include "extconf.h"
+
 #ifdef USE_WLDAP32
 # ifdef HAVE_WINLBER_H
 #   include "winlber.h"
